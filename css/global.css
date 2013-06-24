@@ -90,6 +90,7 @@ BUTTON.busy{border:#aaa solid 1px;background-color:#ddd;color:#aaa;}
 .zakaz_unit.fail:hover{background-color:#ecc}
 
 
+
 #zakaz_add{padding:10px}
 #zakaz_add h1{font-size:13px;font-weight:bold;margin-bottom:10px}
 #zakaz_add .label{text-align:right}
