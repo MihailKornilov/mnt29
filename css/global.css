@@ -1,0 +1,128 @@
+*{padding:0;margin:0;font:12px Tahoma,Verdana,Arial,Sans-Serif,Lucida Sans}
+BODY.mnt29{background-color:#FFF;padding:15px}
+A{color:#247;text-decoration:none;outline:none;cursor:pointer;}
+A:hover{text-decoration:underline;}
+B{font-weight:bold;}
+IMG{border:none;}
+INPUT[type="text"],INPUT[type="password"]{border:#AAA solid 1px;padding:4px 5px}
+INPUT[type="checkbox"],INPUT[type="radio"],label{cursor:pointer}
+TEXTAREA{padding:4px}
+BUTTON{
+    border:#777 solid 1px;
+    background-color:#bbb;
+    color:#222;
+    line-height:22px;
+    padding:0 15px;
+    cursor:pointer;
+}
+BUTTON.busy{border:#aaa solid 1px;background-color:#ddd;color:#aaa;}
+
+
+.error{color:red}
+.label{color:#777}
+.label.top{vertical-align:top}
+.login{text-align:center;margin-top:30px}
+.spisokNext{text-align:center;color:#357;cursor:pointer;padding:10px}
+.spisokNext:not(.busy):hover{background-color:#eef}
+.spisokNext.busy{color:#aaa}
+.headName{
+    color:#444;
+    background-color:#f5f5f5;
+    padding:6px 10px;
+    margin:15px 0 5px 0;
+    border-bottom:#ddd solid 1px;
+    font:bold 13px Verdana
+}
+.tabSpisok{border-collapse:collapse}
+.tabSpisok .td{border:#ddd solid 1px;padding:5px 12px}
+.summa{width:60px}
+
+#main_menu{border-bottom:#ccc solid 1px}
+#main_menu .punkt{display:inline-block;padding:7px 15px;color:#444;font-weight:bold}
+#main_menu .punkt:hover{text-decoration:none;background-color:#eee}
+#main_menu .active{background-color:#ddd;}
+
+
+
+#client{padding:10px;width:500px}
+#client .add{position:relative;top:5px;text-decoration:underline}
+#client h1{font-weight:bold}
+#client_search{float:right;width:200px}
+#client_spisok{margin-top:25px}
+
+.client_unit{
+    margin:10px 0;
+    padding:3px 7px 7px 7px;
+    border-top:#ddd solid 1px
+}
+.client_unit .label{width:80px}
+.client_unit .balans{float:right}
+
+#client_add{padding:10px}
+#client_add h1{font-size:13px;font-weight:bold;margin-bottom:20px}
+#client_add input{width:350px}
+
+#client_info{padding:10px;width:600px}
+#client_info .info_tab{margin-top:10px}
+#client_info .info_tab .label{width:90px}
+
+#client_edit{padding:10px}
+#client_edit h1{font-size:13px;font-weight:bold;margin-bottom:20px}
+#client_edit input{width:350px}
+
+#zakaz{padding:10px 0;width:600px}
+#zakaz #cond{margin-bottom:10px}
+#zakaz #cond label{margin-right:30px}
+#zakaz .all{margin-bottom:4px;font-weight:bold}
+#zakaz_spisok.busy{opacity:0.5}
+
+.zakaz_unit{padding:4px;margin-bottom:5px;border:transparent solid 1px;cursor:pointer}
+.zakaz_unit h1{font:bold 13px Verdana}
+.zakaz_unit table{margin-left:15px}
+.zakaz_unit table *{font-size:11px}
+.oform{border:#bbd solid 1px;background-color:#ddf}
+.zakaz_unit.oform:hover{background-color:#eef}
+.inwork{border:#cc9 solid 1px;background-color:#ffb}
+.zakaz_unit.inwork:hover{background-color:#ffc}
+.ended{border:#bdb solid 1px;background-color:#bfb}
+.zakaz_unit.ended:hover{background-color:#dfd}
+.fail{border:#a99 solid 1px;background-color:#daa}
+.zakaz_unit.fail:hover{background-color:#ecc}
+
+
+#zakaz_add{padding:10px}
+#zakaz_add h1{font-size:13px;font-weight:bold;margin-bottom:10px}
+#zakaz_add .label{text-align:right}
+#zakaz_add #comment,#zakaz_add #work_adres,#zakaz_add #responsible{width:350px}
+#zakaz_add #work_about{width:350px;height:60px}
+#zakaz_add #cost_osmotr{width:60px}
+#zakaz_add #oplata_osmotr_span{display:none;margin-left:40px}
+#zakaz_add #oplata_osmotr_span label{margin-left:15px}
+#zakaz_add #oplata_osmotr_span input{margin-right:2px}
+.zakaz_im{margin-bottom:8px}
+.zakaz_im a{position:relative;top:-40px}
+iframe{display:none}
+
+#zakaz_info{padding:10px;width:700px}
+#zakaz_info h1{font-size:14px;font-weight:bold;margin-bottom:20px}
+#zakaz_info h1 a{margin-left:20px}
+#zakaz_info .label{text-align:right}
+#zakaz_info .work_about{width:400px;border:#eee solid 1px;color:#555;font-weight:bold;padding:3px 5px}
+#zakaz_info .status{width:150px;padding:5px;text-align:center}
+#zakaz_info .img{margin-right:7px}
+#zakaz_info .td.sum{text-align:right;font-weight:bold}
+#zakaz_info .td.dtime{text-align:right}
+#zakaz_info .headName .insert{float:right}
+#zakaz_accrual_insert,#zakaz_money_insert{display:none;margin:10px 0;padding:15px 30px;border:#eee solid 1px;background-color:#f7f7f7}
+#zakaz_accrual_insert h2,#zakaz_money_insert h2{font:bold 13px Verdana}
+#accrual_about,#money_about{width:500px}
+#zakaz_comment_add{width:688px}
+#zakaz_comments{margin:5px 10px}
+#zakaz_comments .unit{margin-bottom:15px}
+#zakaz_comments h3{font-size:11px;color:#777}
+
+#zakaz_edit{padding:10px}
+#zakaz_edit h1{font-size:13px;font-weight:bold;margin-bottom:10px}
+#zakaz_edit .label{text-align:right}
+#zakaz_edit input{width:350px}
+#zakaz_edit #work_about{width:350px;height:60px}

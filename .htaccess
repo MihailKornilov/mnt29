@@ -1,0 +1,35 @@
+AddDefaultCharset utf-8
+#rewrite rules
+RewriteEngine on
+Options +FollowSymLinks
+Options -Indexes
+#pages
+RewriteBase /
+RewriteRule ^$ index\.php
+RewriteRule ^(client|zakaz|exit)/?$ index\.php?p=$1
+RewriteRule ^client/(add)/?$ index\.php?p=client&d=add
+RewriteRule ^client/([0-9]{1,20})/?$ index\.php?p=client&d=info&id=$1
+RewriteRule ^client/([0-9]{1,20})/edit/?$ index\.php?p=client&d=edit&id=$1
+RewriteRule ^zakaz/([0-9]{1,20})/?$ index\.php?p=zakaz&d=info&id=$1
+RewriteRule ^zakaz/([0-9]{1,20})/edit/?$ index\.php?p=zakaz&d=edit&id=$1
+RewriteRule ^zakaz/add/client=([0-9]{1,20})/?$ index\.php?p=zakaz&d=add&id=$1
+
+
+#error redirecting
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
+#compressing
+<ifmodule mod_deflate.c="">
+<filesmatch .(js|css|jpg|png|gif|ico|jpeg)$="">
+SetOutputFilter DEFLATE
+</filesmatch>
+</ifmodule>
+#caching
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|jpeg|gif|png|css|js|ico)$">
+ExpiresActive on
+ExpiresDefault "modification plus 1 year"
+</filesmatch>
+</ifmodule>
